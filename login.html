@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Abel|Vibur&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      font-family: 'Abel', sans-serif;
+      opacity: .95;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .input-item {
+      margin-right: 5px;
+    }
+
+    .fa-eye {
+      cursor: pointer;
+      position: relative;
+      top: -38px;
+      left: 90%;
+      color: #999;
+    }
+
+    .log-in {
+      width: 100%;
+      padding: 10px;
+      background: #ff6f91;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .other {
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .btn.submits {
+      background: transparent;
+      border: none;
+      color: #555;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .btn.submits i {
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="form-container">
+    <!-- Username Input -->
+    <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required>
+
+    <!-- Password Input -->
+    <div style="position: relative;">
+      <span class="input-item">
+        <i class="fa fa-key"></i>
+      </span>
+      <input class="form-input" type="password" placeholder="Password" id="pwd" name="password" required>
+      <span>
+        <i class="fa fa-eye" aria-hidden="true" id="eye"></i>
+      </span>
+    </div>
+
+    <!-- Log In Button -->
+    <button class="log-in">Log In</button>
+
+    <!-- Other Buttons -->
+    <div class="other">
+      <button class="btn submits frgt-pass">Forgot Password</button>
+      <button class="btn submits sign-up">Sign Up 
+        <i class="fa fa-user-plus" aria-hidden="true"></i>
+      </button>
+    </div>
+  </form>
+
+  <script>
+    function show() {
+      document.getElementById('pwd').setAttribute('type', 'text');
+    }
+
+    function hide() {
+      document.getElementById('pwd').setAttribute('type', 'password');
+    }
+
+    let pwShown = 0;
+    document.getElementById("eye").addEventListener("click", function () {
+      if (pwShown == 0) {
+        pwShown = 1;
+        show();
+      } else {
+        pwShown = 0;
+        hide();
+      }
+    }, false);
+  </script>
+
+</body>
+</html>

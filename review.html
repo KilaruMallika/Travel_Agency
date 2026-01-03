@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency Reviews</title>
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">TRAVEL AGENCY</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about1.html">About</a></li>
+                <li><a href="book.html">Book</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="destination.html">Destination</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reviews-stats">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <h3>4.9</h3>
+                    <div class="stars">★★★★★</div>
+                    <p>Average Rating</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2.5K+</h3>
+                    <p>Happy Travelers</p>
+                </div>
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>Satisfaction Rate</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews-grid">
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg" alt="Sarah Johnson">
+                    <div>
+                        <h3>Sarah Johnson</h3>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">"Our trip to the Maldives was absolutely perfect! The accommodations were luxurious, and the staff went above and beyond. Will definitely book through them again!"</p>
+                <div class="review-footer">
+                    <span>Maldives Paradise Tour</span>
+                    <span>2 weeks ago</span>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="David Chen">
+                    <div>
+                        <h3>David Chen</h3>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">"The Swiss Alps tour exceeded all expectations. The guides were knowledgeable and the itinerary was perfectly balanced. A memorable experience!"</p>
+                <div class="review-footer">
+                    <span>Swiss Alps Adventure</span>
+                    <span>1 month ago</span>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg" alt="Emma Thompson">
+                    <div>
+                        <h3>Emma Thompson</h3>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">"The Japan cultural tour was incredible! Every detail was thoughtfully planned, from the traditional ryokan stays to the local cuisine experiences."</p>
+                <div class="review-footer">
+                    <span>Japan Cultural Tour</span>
+                    <span>3 weeks ago</span>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg" alt="Michael Rodriguez">
+                    <div>
+                        <h3>Michael Rodriguez</h3>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">"The Greek Islands cruise was a dream come true. Each island had its own charm, and the cruise ship was top-notch. Unforgettable experience!"</p>
+                <div class="review-footer">
+                    <span>Greek Islands Cruise</span>
+                    <span>1 week ago</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="review-form">
+            <h2>Share Your Experience</h2>
+            <form id="reviewForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Select Your Tour</option>
+                        <option value="maldives">Maldives Paradise Tour</option>
+                        <option value="swiss">Swiss Alps Adventure</option>
+                        <option value="japan">Japan Cultural Tour</option>
+                        <option value="greek">Greek Islands Cruise</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5">★</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4">★</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3">★</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2">★</label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1">★</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Share your experience..." required></textarea>
+                </div>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="review.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #ff9800;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+/* Package Container */
+.package-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual Package */
+.package {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.package:hover {
+    transform: scale(1.05);
+}
+
+/* Package Image */
+.package img {
+    width: 100%;
+    border-radius: 12px;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Package Heading */
+.package h3 {
+    margin: 15px 0;
+    color: #333;
+    font-size: 20px;
+}
+
+/* Price Section */
+.price {
+    margin: 15px 0;
+}
+
+.current-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff9800;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+/* Button */
+.btn {
+    background: linear-gradient(to right, #ff9800, #e68900);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #e68900, #d47400);
+    transform: scale(1.05);
+}
